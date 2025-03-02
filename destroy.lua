@@ -1,5 +1,3 @@
-for _, v in ipairs(game.Players:GetChildren()) do
-  if v:IsA('Player') then
-  v:Kick()
-  end
+for _, descendant in pairs(game.Workspace:GetDescendants()) do
+    descendant:Destroy()
 end
